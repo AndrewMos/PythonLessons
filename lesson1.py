@@ -36,18 +36,16 @@ def numberscompress(a):
 
 def filetodic():
     d = {}
-    filename = "lista.txt"
+    filename = "files/lista.txt"
     file = open(filename, "r")
     for line in file:
         d[line.split()[0]] = line.split()[1]
         # print (line.split()[0])
     print(d)
 
-
-
 from collections import Counter
 def filesort():
-    filename = "text.txt"
+    filename = "files/text.txt"
     file = open(filename, "r")
     wordcount = Counter(file.read().split())
     for item in wordcount.items():
@@ -55,7 +53,7 @@ def filesort():
 
 def filesortwithdic():
     d = {}
-    filename = "text.txt"
+    filename = "files/text.txt"
     file = open(filename, "r")
     for str in file.read().split():
         if not(str in d):
@@ -65,17 +63,19 @@ def filesortwithdic():
             d.update({str: num})
     print(d)
 
-
+#8
 filesortwithdic()
-
+#7
 # filetodic()
-
+#6
 # print(numberscompress([1,2,2,3]))
-
+#5
 # print(stringsort(["xba", "aaa", "xab"]))
-
+#4
 # print(stringcount(["aaf", "aa", "gg"]))
-
+#3
 # cookies(10)
+#2
 # print(stringcut("1234567"))
+#1
 # print(stringexgange("123456", "asdfgh"))
