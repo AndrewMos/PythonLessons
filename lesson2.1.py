@@ -28,13 +28,3 @@ clr = cm.copper(data)
 
 plt.scatter(x, y, 10, y)
 plt.show()
-
-
-
-# filename = "files/data2.dat"
-# file = open(filename, "r")
-# for str in file.read():
-#     y.append(str)
-#
-# plt.plot(x, y)
-# plt.show()

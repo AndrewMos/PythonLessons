@@ -8,8 +8,7 @@ for line in file:
 
 x = [float(i) for i in tmp[0].split()]
 y = [float(i) for i in tmp[1].split()]
-clr = [float(i) for i in y]
-print(x, y)
-for cx, cy, c in zip(x, y, clr):
-    plt.bar(cx, cy, 0.5, color=[c, 0, 0, 0.5])
+
+for cx, cy in zip(x, y):
+    plt.bar(cx, cy, 0.5, color=[cy, 0, cy, 1])
 plt.show()
